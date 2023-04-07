@@ -9,6 +9,7 @@
   --color-font-eclipse: rgba(255, 255, 255, 0.6);
   --color-border-white: #eeeeee;
   --color-border-eys: #ececec;
+  --color-tree: #757575;
 }
 * {
   padding: 0;
@@ -94,6 +95,13 @@ body {
   display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
+}
+.icon {
+  display: inline-block;
+  fill: border solid var(--color-tree);
+}
+.icon::before {
+  content: "";
 }
 .link-top {
   font-family: "Roboto";
@@ -257,6 +265,9 @@ body {
 }
 .child {
   display: inline-block;
+}
+.icon-one {
+  
 }
 .rank-name {
   font-family: "Roboto";
