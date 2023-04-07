@@ -96,11 +96,11 @@ body {
   padding-top: 32px;
   padding-bottom: 32px;
 }
-.icon {
+.icon-menu-two {
   display: inline-block;
   fill: border solid var(--color-tree);
 }
-.icon::before {
+.icon-menu-two::before {
   content: "";
 }
 .link-top {
@@ -265,9 +265,6 @@ body {
 }
 .child {
   display: inline-block;
-}
-.icon-one {
-  
 }
 .rank-name {
   font-family: "Roboto";
