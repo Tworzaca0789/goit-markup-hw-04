@@ -12,6 +12,7 @@
   --color-icon-wood: #757575;
   --color-icon-sky: #2196f3;
   --color-icon-light: #f5f4fa;
+  --color-icon-street: #afb1b8;
 }
 * {
   padding: 0;
@@ -403,6 +404,16 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   padding-bottom: 30px;
+}
+.social-media {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  padding: 16px 32px 18px;
+  fill: Solid var(--color-icon-street);
+}
+.icon-job {
+  display: flex;
 }
 /* footer studio i portfolio*/
 
