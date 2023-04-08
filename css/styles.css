@@ -9,7 +9,8 @@
   --color-font-eclipse: rgba(255, 255, 255, 0.6);
   --color-border-white: #eeeeee;
   --color-border-eys: #ececec;
-  --color-tree: #757575;
+  --color-icon-wood: #757575;
+  --color-icon-sky: #2196f3;
 }
 * {
   padding: 0;
@@ -67,7 +68,7 @@ body {
   gap: 46px;
   padding-top: 32px;
   padding-bottom: 32px;
-  margin-right: 371px;
+  margin-right: 345px;
 }
 .item {
   display: flex;
@@ -88,20 +89,39 @@ body {
 .communications-link {
   display: flex;
   flex-direction: row;
-  gap: 50px;
+  gap: 30px;
+  padding-right: 227;
   background: var(--color-font-snow);
 }
 .items {
   display: flex;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 33px;
+  padding-bottom: 31px;
+  gap: 10px;
+}
+.icon-menu:hover,
+.icon-menu:focus {
+  fill: var(--color-icon-sky);
+}
+.icon-menu-two:hover,
+.icon-menu-two:focus {
+  fill: var(--color-icon-sky);
+}
+.icon-menu {
+  fill: var(--color-icon-wood);
 }
 .icon-menu-two {
-  display: inline-block;
-  fill: border solid var(--color-tree);
+  fill: var(--color-icon-wood);
+  margin-left: 10;
+}
+.icon-menu::before {
+  content: "";
 }
 .icon-menu-two::before {
   content: "";
+}
+.memos {
+  margin-right: 10px;
 }
 .link-top {
   font-family: "Roboto";
@@ -111,6 +131,12 @@ body {
   color: var(--color-font-wood);
   text-decoration-line: none;
   letter-spacing: 0.02em;
+}
+.link-top {
+  margin-right: 10;
+}
+.link-top::before {
+  content: "";
 }
 .link-top:hover,
 .link-top:focus {
@@ -196,8 +222,9 @@ body {
 /*main studio section-new*/
 .section-new {
   background: var(--color-font-cloud);
+  background-image: url(/goit-markup-hw-04/images/backgroundphoto/maintitle.jpg);
+  max-width: 1600;
 }
-.container-title,
 .finish-block {
   background: var(--color-font-cloud);
 }
@@ -207,7 +234,6 @@ body {
   justify-content: center;
   align-items: center;
   margin: 0;
-  background: var(--color-font-cloud);
 }
 .title {
   font-family: "Roboto";
