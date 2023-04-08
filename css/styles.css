@@ -11,6 +11,7 @@
   --color-border-eys: #ececec;
   --color-icon-wood: #757575;
   --color-icon-sky: #2196f3;
+  --color-icon-light: #f5f4fa;
 }
 * {
   padding: 0;
@@ -291,6 +292,20 @@ body {
 }
 .child {
   display: inline-block;
+  flex-direction: row;
+  justify-content: center;
+}
+.icon-post {
+  max-width: 270px;
+  max-height: 120px;
+  padding: 25px 100px;
+  border-radius: 4px;
+  background-color: var(--color-icon-light);
+}
+.icon-logo-one {
+  display: flex;
+  flex-direction: row;
+  align-content: stretch;
 }
 .rank-name {
   font-family: "Roboto";
@@ -299,6 +314,7 @@ body {
   line-height: 1.1;
   text-transform: uppercase;
   letter-spacing: 0.03em;
+  padding-top: 30px;
 }
 .post {
   font-size: 14px;
