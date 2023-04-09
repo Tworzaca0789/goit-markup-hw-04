@@ -9,10 +9,13 @@
   --color-font-eclipse: rgba(255, 255, 255, 0.6);
   --color-border-white: #eeeeee;
   --color-border-eys: #ececec;
+  --color-background-bag: #e5e5e5;
   --color-icon-wood: #757575;
   --color-icon-sky: #2196f3;
   --color-icon-light: #f5f4fa;
   --color-icon-street: #afb1b8;
+  --color-icon-snow: #ffffff;
+  --color-icon-dark: #000000;
 }
 * {
   padding: 0;
@@ -367,13 +370,13 @@ body {
   line-height: 1.1;
   text-align: center;
   letter-spacing: 0.03em;
-  padding-top: 94px;
+  padding-top: 93px;
 }
 .kids-person {
   display: flex;
   flex-wrap: nowrap;
   align-content: stretch;
-  padding-bottom: 94px;
+  padding-bottom: 89px;
   padding-top: 50px;
   margin: 0 auto;
   gap: 30px;
@@ -403,17 +406,50 @@ body {
   color: var(--color-font-wood);
   text-align: center;
   letter-spacing: 0.03em;
-  padding-bottom: 30px;
+  padding-bottom: 16px;
 }
 .social-media {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-around;
-  padding: 16px 32px 18px;
-  fill: Solid var(--color-icon-street);
+  padding-top: 16px;
+  padding-right: 32px;
+  padding-bottom: 24px;
+  padding-left: 32px;
 }
-.icon-job {
+.media-block {
   display: flex;
+  margin-bottom: 12px;
+  fill: var(-color-icon-street);
+  padding: 12px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.media-block:hover,
+.media-block:focus {
+  fill: var(--color-icon-snow);
+  background-color: var(--color-icon-sky);
+}
+/*main studio section-customers*/
+.section-customers {
+  background: var(--color-icon-snow);
+}
+.consumer {
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
+  text-align: center;
+  letter-spacing: 0.03em;
+  fill: var(--color-font-primary);
+  padding-bottom: 94px;
+}
+.consumer-web {
+  display: flex;
+  flex-wrap: nowrap;
+  align-content: stretch;
+  padding-top: 50px;
+  padding-bottom: 94px;
 }
 /* footer studio i portfolio*/
 
