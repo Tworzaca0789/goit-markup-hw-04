@@ -43,11 +43,14 @@ body {
   padding: 0 15px;
 }
 /* header studio i portfolio*/
-
+.container-header-all {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 .container-menu {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  gap: 93px;
 }
 .container-menu .link-logo {
   display: flex;
@@ -98,9 +101,12 @@ body {
 .navigation-link:hover {
   color: var(--color-font-sky);
 }
+.communications-link-second {
+  display: flex;
+  flex-direction: column;
+}
 .communications-link {
   display: flex;
-  flex-direction: row;
   gap: 30px;
   background: var(--color-font-snow);
 }
@@ -108,14 +114,18 @@ body {
   display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
+}
+.items > a {
+  display: flex;
   gap: 10px;
 }
-.icon-menu:hover {
+.items > a:hover,
+.items > a:focus {
   fill: var(--color-icon-sky);
 }
-.icon-menu {
-  display: inline;
-  fill: var(--color-icon-wood);
+.icon-mail .icon-phone:hover,
+.icon-mail .icon-phone:focus {
+  fill: var(--color-icon-sky);
 }
 .link-top {
   font-family: "Roboto";
@@ -462,11 +472,9 @@ body {
   fill: var(--color-icon-street);
   cursor: pointer;
 }
-
 /* footer studio i portfolio*/
 .finish-block {
   background: var(--color-background-cloud);
-  display: flex;
 }
 .container-stop {
   display: flex;
@@ -521,6 +529,7 @@ body {
 }
 .big-media {
   display: flex;
+  flex-wrap: nowrap;
 }
 .join-us {
   display: flex;
@@ -538,13 +547,9 @@ body {
   letter-spacing: 0.03em;
   color: var(--color-font-snow);
 }
-.media-bottom-only {
-  display: flex;
-}
 .social-media-bottom {
   display: flex;
   gap: 10px;
-  padding-bottom: 94px;
 }
 .media-block-low {
   display: flex;
