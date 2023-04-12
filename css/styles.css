@@ -476,18 +476,23 @@ body {
 .finish-block {
   background: var(--color-background-cloud);
 }
-.container-stop {
+.toghether-finish-block {
   display: flex;
+  flex-direction: row;
   gap: 70px;
 }
 .toghether-block {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  padding-top: 60px;
   padding-bottom: 60px;
 }
 .logo-end {
   display: flex;
-  padding-top: 60px;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
 }
 .logo-bottom:hover {
   color: var(--color-font-sky);
@@ -501,11 +506,17 @@ body {
 .contact-road:focus {
   color: var(--color-font-sky);
 }
+.container-address {
+  display: flex;
+  padding-top: 20px;
+}
 .container-bottom {
   display: flex;
   flex-direction: column;
-  align-content: flex-start;
-  padding-top: 20px;
+}
+.container-address {
+  display: flex;
+  padding-bottom: 60px;
 }
 .kids-bottom {
   display: flex;
@@ -529,12 +540,12 @@ body {
 }
 .big-media {
   display: flex;
-  flex-wrap: nowrap;
+  flex-direction: column;
+  padding-top: 72px;
+  padding-bottom: 100px;
 }
 .join-us {
   display: flex;
-  padding-top: 72px;
-  padding-bottom: 20px;
 }
 .join {
   font-family: Roboto;
@@ -546,6 +557,10 @@ body {
   vertical-align: top;
   letter-spacing: 0.03em;
   color: var(--color-font-snow);
+}
+.media-bottom-only {
+  display: flex;
+  padding-top: 20px;
 }
 .social-media-bottom {
   display: flex;
